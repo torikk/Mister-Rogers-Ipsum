@@ -1,0 +1,34 @@
+@import 'foundation';
+
+@include foundation-xy-grid-classes(
+  /* options
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: true,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: true,
+  $frame-grid: true
+  */
+);
+
+@font-face {
+font-family: 'rogers';
+src: url('css/ROGERS.TTF');
+}
+
+.background {
+    background-color:#cc0000;
+}
+
+.innerContainer {
+    background-color:#333333;
+    font-family: 'rogers';
+}
+
+h5 {
+    display:inline-block;
+    font-family: 'rogers';
+    color:#fff;
+}
