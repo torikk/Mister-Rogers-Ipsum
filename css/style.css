@@ -1,30 +1,55 @@
-@import 'foundation';
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
 
-@include foundation-xy-grid-classes(
-  /* options
-  $base-grid: true,
-  $margin-grid: true,
-  $padding-grid: true,
-  $block-grid: true,
-  $collapse: true,
-  $offset: true,
-  $vertical-grid: true,
-  $frame-grid: true
-  */
-);
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
 
 @font-face {
 font-family: 'rogers';
 src: url('css/ROGERS.TTF');
 }
 
-.background {
-    background-color:#cc0000;
+.red {
+    color:#cc0000;
+}
+
+.topSection {
+    height:900px;
+    background-color:#fff;
+    border: 50px solid #cc0000;
+    box-shadow:  1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+}
+
+#down {
+    position:absolute;
+}
+
+#down img {
+    position relative;
+    top:0;
+    left:0
+}
+
+.rogersText {
+    font-family: 'rogers';
 }
 
 .innerContainer {
-    background-color:#333333;
-    font-family: 'rogers';
+    background-color:#fff;
+    font-family: verdana;
+    max-width:900px;
+    margin: auto;
+}
+
+h1 {
+    
 }
 
 h5 {
@@ -32,3 +57,4 @@ h5 {
     font-family: 'rogers';
     color:#fff;
 }
+
