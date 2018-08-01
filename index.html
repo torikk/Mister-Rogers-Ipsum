@@ -2,37 +2,66 @@
 <html>
 <head>
    <meta charset = "UTF-8">
-     <title>Mr. Rogers Lorum Ipsum quote generator</title>
+     <title>Mister Rogers Lorum Ipsum quote generator</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet/scss" type="text/css" href="css/style.scss">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
 
- <!--UPPER-->
-<div class="topSection">
-   <div class="innerContainer">
-    <div class="grid-container">
-       <div div class="grid-1">
-           test 1
-       </div>
-         <div div class="grid-1">
-           test 2
-       </div>
-    </div>
-   </div>
-</div>
+
  <!--OUTER CONTAINER-->
  
+<div class="flex-container">
+  <div claqss="centerContent">
+      <div class="title">
+          <h1>a <span>Mister Rogers</span> text generator</h1>
+      </div>
+  
+  
+        <div class="content">
+          <div class="content__container">
+            <p class="content__container__text">
+              I'm glad you're
+            </p>
 
-<div class="flex-container background">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
+            <ul class="content__container__list">
+              <li class="content__container__list__item">my friend.</li>
+              <li class="content__container__list__item">you.</li>
+              <li class="content__container__list__item">just the way you are.</li>
+              <li class="content__container__list__item">my neighbor.</li>
+            </ul>
+          </div>
+        </div>
+  
+    <div class="slidecontainer">
+  
+        <p>abc</p>
+        <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+        <p>number of paragraphs: <span id="slideramount"></span></p>
+    </div>
+    
+    <div class="textGenerator">
+         
+            <p id="demo">A Paragraph.</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+      <p id="lists">List of quotes</p>
+    </div>
+   
+    </div>
 </div>
+
+    
+  
  
     <!--INNER CONTAINER-->
 
-  
+
      <!--INNER CONTAINER end-->
     <!--OUTER CONTAINER-->
     
@@ -75,13 +104,7 @@
 
 
 
-<h2>External JavaScript</h2>
 
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-<p>(myFunction is stored in an external file called "myScript.js")</p>
 
 <script src="js/myfirst.js"></script>
 
