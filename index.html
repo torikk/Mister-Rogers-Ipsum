@@ -15,12 +15,10 @@
  <!--OUTER CONTAINER-->
  
 <div class="flex-container">
-  <div claqss="centerContent">
-      <div class="title">
-          <h1>a <span>Mister Rogers</span> text generator</h1>
-      </div>
-  
-  
+
+  <div class="centerContent">
+       
+       <div class="rotator">
         <div class="content">
           <div class="content__container">
             <p class="content__container__text">
@@ -28,35 +26,52 @@
             </p>
 
             <ul class="content__container__list">
-              <li class="content__container__list__item">my friend.</li>
-              <li class="content__container__list__item">you.</li>
-              <li class="content__container__list__item">just the way you are.</li>
               <li class="content__container__list__item">my neighbor.</li>
+              <li class="content__container__list__item">here today.</li>
+              <li class="content__container__list__item">my friend.</li>
+              <li class="content__container__list__item">being you.</li>
             </ul>
           </div>
         </div>
+        </div>
+         <div class="title">
+          <h1>a <span>Mister Rogers</span> text generator</h1>
+        </div>
+  
   
     <div class="slidecontainer">
   
-        <p>abc</p>
-        <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
-        <p>number of paragraphs: <span id="slideramount"></span></p>
+        <input type="range" min="1" max="10" value="2" class="slider" id="myRange">
+        <p><span id="slideramount"></span> paragraph(s)</p>
     </div>
     
+    <div class="switchPosition">
+        <label class="switch">
+        
+          <input type="checkbox">
+          <span ontoggle="pFunction()" class="toggle round"></span>
+        </label>
+        
+    </div>
     <div class="textGenerator">
          
-            <p id="demo">A Paragraph.</p>
-
-        <button type="button" onclick="myFunction()">Try it</button>
-
-    <p>(myFunction is stored in an external file called "myScript.js")</p>
-      <p id="lists">List of quotes</p>
+        <button class="no_pTags" type="button" onclick="randomParagraphs()">GENERATE</button>
+        <p id="quotes"></p>
+        
+        <button class="pTags" type="button" onclick="randomParagraphs2()">GENERATE</button>
+        <p id="quotes"></p>
+  
     </div>
    
     </div>
+    <div id="rogers">
+        <img src="images/rogers.png">
+    </div>
+    
+    
 </div>
 
-    
+   
   
  
     <!--INNER CONTAINER-->
@@ -106,7 +121,7 @@
 
 
 
-<script src="js/myfirst.js"></script>
+<script src="js/quote.js"></script>
 
 </body>
 </html>
