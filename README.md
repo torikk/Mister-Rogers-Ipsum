@@ -1,5 +1,6 @@
 # Mister Rogers Ipsum
 Responsive Mister Rogers text generator
+Created by Tori Finch, 2018, torifinch.com
 
 I started this project because wanted to use css, javascript and jQuery to create a custom Lorum Ipsum generator. Inspired by the always soothing and elequent Mister Rogers, I decided to give his voice to my text.
 
