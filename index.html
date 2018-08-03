@@ -3,6 +3,8 @@
 <head>
    <meta charset = "UTF-8">
      <title>Mister Rogers Lorum Ipsum quote generator</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet/scss" type="text/css" href="css/style.scss">
@@ -49,20 +51,23 @@
         <label class="switch">
         
           <input type="checkbox">
-          <span ontoggle="pFunction()" class="toggle round"></span>
+          <span class="toggle notactive round"></span>
         </label>
-        
+        <div class="togText">
+            <p>html</p>
+        </div>
     </div>
     <div class="textGenerator">
-         
-        <button class="no_pTags" type="button" onclick="randomParagraphs()">GENERATE</button>
-        <p id="quotes"></p>
+        <div class="nopTags">
+            <button type="button" onclick="randomParagraphs2()">GENERATE</button>
         
-        <button class="pTags" type="button" onclick="randomParagraphs2()">GENERATE</button>
-        <p id="quotes"></p>
+        </div>
+        <div class="pTags">
+            <button type="button" onclick="randomParagraphs()">GENERATE</button>
+        
   
     </div>
-   
+           <p id="quotes"></p>
     </div>
     <div id="rogers">
         <img src="images/rogers.png">
@@ -121,7 +126,19 @@
 
 
 
-<script src="js/quote.js"></script>
+
 
 </body>
+<script>
+ $(document).ready(function(){
+     $(".pTags").hide();
+    $(".toggle").click(function(){
+        $(".nopTags").toggle();
+        $(".pTags").toggle();
+    });
+});
+    </script>
+ <script src="js/quote.js"></script>
+
 </html>
+

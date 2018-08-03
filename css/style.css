@@ -57,6 +57,7 @@ button {
     padding:10px 20px;
     border: 1px solid #172b33;
     min-width:100px;
+    
 }
 
 button:hover {
@@ -67,17 +68,6 @@ button:hover {
 button:active {
   transform: translateY(4px);
 }
-
-
-.nopTags {
-    display:flex;
-}
-
-.pTags {
-    display:none;
-}
- 
-
 
 
 /* TEXT */
@@ -103,6 +93,18 @@ button:active {
 
 #slideramount {
    font-weight: bold; 
+}
+
+.togText {
+    position: relative;
+    top: -20px;
+    left: 313px;
+}
+
+.togText p {
+    position:absolute;
+    color:#172b33;
+    font-family: "Lato", sans-serif;
 }
 
 

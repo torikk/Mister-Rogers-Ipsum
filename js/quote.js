@@ -44,12 +44,6 @@ var lines = [
     
 ];
 
-$(document).ready(function(){
-    $("toggle").click(function(){
-        $("ptag").toggle();
-    });
-});
-
 
 function randomQuote() {
 
@@ -82,7 +76,7 @@ function randomParagraphs() {
 
 
 function randomParagraphs2() {
-    var x = document.getElementsByClassName("toggle");
+    
     var paragraph = ""
     
        for (var i = 0; i < slider.value; i++) {
